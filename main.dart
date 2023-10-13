@@ -1,0 +1,336 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        home: Scaffold(
+      appBar: AppBar(
+        title: Text("Ludo Board"),
+      ),
+      body: Center(
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Container(
+            child: Padding(
+              padding: const EdgeInsets.all(20),
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Colors.white),
+                      MyBox(Colors.white),
+                      MyBox(Colors.white),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Colors.white),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Colors.white),
+                      MyBox(Colors.white),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(const Color.fromARGB(255, 44, 42, 42)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Colors.white),
+                      MyBox(Colors.white),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Colors.white),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Color.fromARGB(190, 31, 245, 38)),
+                      MyBox(Colors.white),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Colors.white),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                      MyBox(Color.fromARGB(255, 255, 241, 116)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 0, 0, 0)),
+                      MyBox(Color.fromARGB(248, 180, 163, 3)),
+                      MyBox(Color.fromARGB(255, 0, 0, 0)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(const Color.fromARGB(255, 44, 42, 42)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 4, 61, 5)),
+                      MyBox(Color.fromARGB(255, 0, 0, 0)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(const Color.fromARGB(255, 44, 42, 42)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 0, 0, 0)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(255, 0, 0, 0)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(const Color.fromARGB(255, 44, 42, 42)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(248, 255, 6, 6)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(248, 3, 15, 180)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(240, 240, 77, 77)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 255, 255, 255)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                      MyBox(Color.fromARGB(255, 65, 164, 245)),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    ));
+  }
+}
+
+Widget MyBox(Color mColor) {
+  return Container(
+    width: 30,
+    height: 30,
+    color: mColor, // background color
+    child: Container(
+      decoration: BoxDecoration(
+        border: Border.all(
+          color: Colors.black, // Set the border color
+          width: 0.1, // Set the border width
+        ),
+        // Other decoration properties go here if needed
+      ),
+      // Other Container properties go here
+    ),
+  );
+}
